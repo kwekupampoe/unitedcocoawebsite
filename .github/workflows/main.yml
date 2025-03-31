@@ -22,3 +22,5 @@ jobs:
           password: ${{ secrets.CPANEL_FTP_PASSWORD }}
           local-dir: ./  
           server-dir: /public_html/ 
+          protocol: ftps
+          passive: true
