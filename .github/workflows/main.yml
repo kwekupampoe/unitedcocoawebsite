@@ -17,7 +17,7 @@ jobs:
       - name: Upload files via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.1
         with:
-          server: ${{ secrets.CPANEL_FTP_SERVER }}
+          server: unitedcocoaltd.com
           username: ${{ secrets.CPANEL_FTP_USERNAME }}
           password: ${{ secrets.CPANEL_FTP_PASSWORD }}
           local-dir: ./  
