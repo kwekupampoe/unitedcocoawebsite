@@ -1,0 +1,200 @@
+:root{
+    --herosection-height:600px;
+    --topsection-padding-top:60px;
+    --topsection-padding-x:60px;
+
+    --missionsection-gap:50px;
+    --subsection-padding:50px
+}
+
+#smoothpreloader{
+    width: 100%;
+    height: 100vh;
+    background-color: #5b4021;
+  }
+  
+  #smoothpreloadercontainer{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #smoothpreloadercontainer img{
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+.mainlogo{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar{
+    background-color:rgb(180, 135, 83) !important;
+}
+
+.herosection{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
+.herocontainer{
+   background-image: url('./assets/sara-gomes-6XVJsOLL5mc-unsplash.jpg') !important;
+   height: var(--herosection-height);
+   width: 100%;
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+.herooverlay {
+    /* position: absolute; */
+    width: 100%;
+    height: var(--herosection-height);
+    background-color: rgba(0, 0, 0, 0.45);
+    gap: 20px;
+}
+
+.herocontainer h3{
+    font-size: 80px;
+    color: #ead72a;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.herocontainer p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.topsection{
+    background-color: #5b4021;
+    padding: var(--topsection-padding-top);
+}
+
+/* mission section  */
+.missionsection, .productsection,.premiumsection{
+    /* background-color: rgb(180, 135, 83); */
+    gap: var(--missionsection-gap);
+    text-align: center;
+    padding: var(--subsection-padding);
+}
+
+.missionsection h1, .productsection h1, .premiumsection h1{
+    color:rgb(234, 215, 42);
+}
+
+.missionsection p, .productsection p, .premiumsection p{
+    width: 500px;
+    margin: 0 auto;
+    text-align: justify;
+    color:white;
+}
+
+
+
+.discoverimage{
+    height: 550px;
+    /* background-color: brown; */
+    flex:1;
+} 
+
+.discoverimage img{
+    height: 100%;
+    object-fit: cover;
+    flex:1;
+}
+
+.discovercontent{
+    /* background-color: yellow; */
+    gap:40px;
+    flex:1;
+    padding:30px;
+}
+
+.discovercontent h3{
+    /* color: rgb(180, 135, 83); */
+    color: #ead72a;
+    width: 500px;
+}
+
+.discovercontent p{
+    color: white;
+    width: 500px;
+}
+
+.prodsection{
+    /* background-color: pink; */
+    padding: 50px;
+    gap: 30px;
+}
+
+.prodcontent{
+    /* padding: 10px; */
+    gap:100px;
+}
+
+.prodcontent .prodcard{
+    /* background-color: orange; */
+    width: 350px;
+    flex:1;
+    border-radius: 5px;
+    box-shadow:2px 3px 6px 3px rgba(0,0,0,0.1);
+    padding: 0 10px;
+    /* background-color: #f1f1f1; */
+}
+
+.prodcontent .prodcard img{
+    height: 300px !important;
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.prodcontent .prodcard h3{
+    /* color: rgb(180, 135, 83); */
+    text-align: center;
+    color:#2c1a08 !important;
+}
+
+.prodcontent .prodcard p{
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    color:#2c1a08 !important;
+}
+
+.prodsection .prodtitle{
+    color:#ead72a;
+    padding: 40px;
+    /* background-color: burlywood; */
+}
+
+.footertitle{
+    color: #ead72a;
+    padding: 40px;
+    text-align: center;
+    /* background-color: burlywood; */
+}
+
+ul.footerlinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footertitle{
+    font-size: 15px;
+}
+
+
+
+
