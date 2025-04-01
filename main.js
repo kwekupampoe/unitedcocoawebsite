@@ -8,3 +8,7 @@ $(window).on("load", function () {
     }
     preloader();
 });
+
+$(document).ready(function(){
+    $(".showCurrentYear").html(new Date().getFullYear());
+});
