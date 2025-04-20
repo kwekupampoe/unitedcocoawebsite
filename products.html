@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>United Cocoa Limited</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
     <link
       rel="icon"
       href="./assets/Untitled design (1).png"
@@ -17,111 +21,219 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
-    <header>
-      <a href="index.html"
-        ><img src="./assets/pngegg-removebg-preview.png" alt="" class="LOGO"
-      /></a>
-      <nav>
-        <input type="checkbox" id="check" />
-        <!-- Menu icon -->
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul class="navbar">
-          <li>
-            <a class="nav-link nav-link-ltr" href="./contact.html"
-              >Contact Us</a
-            >
-          </li>
-          <li>
-            <a class="nav-link nav-link-ltr" href="" id="active">Products</a>
-          </li>
-          <li>
-            <a class="nav-link nav-link-ltr" href="./aboutUs.html">About Us</a>
-          </li>
-          <li>
-            <a class="nav-link nav-link-ltr" href="index.html">Home</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="prodtext">
-      <h1>Products and Services</h1>
-      <p>
-        UCPL current products portfolio is made up of Cocoa Power products
-        produced from cocoa cake into fine powder for industrial and domestic
-        use under the brand names; “BROWNCO” (domestic use) and “MASTA BRAND”
-        (industrial use). These products were approved by Ghana Food and Drugs
-        Authority (FDA) for distribution in the domestic and export markets. The
-        company also process Cocoa Butter and Cocoa Liquor under a tolling
-        arrangement with cocoa processing companies to meet the demand of its
-        export clients
-      </p>
-    </div>
-    <div class="products">
-      <a href="./products.html">
-        <h2>Products</h2>
-      </a>
-      <div class="container1">
-        <div class="carousel-view">
-          <button id="product-prev-btn" class="prev-btn">
-            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
-              <path
-                d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
-              />
-            </svg>
-          </button>
-          <div id="product-item-list" class="product-item-list">
-            <img id="" class="item" src="./assets/_MG_0059.JPG" />
-            <img id="" class="item" src="./assets/_MG_9977.JPG" />
-            <img id="" class="item" src="./assets/_MG_9998.JPG" />
-            <img id="" class="item" src="./assets/cocoamass.jpg" />
-            <img id="" class="item" src="./assets/cocoapowder.jpg" />
-          </div>
-          <button id="product-next-btn" class="next-btn">
-            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
-              <path
-                d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
-              />
-            </svg>
-          </button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/pngegg-removebg-preview.png"
+            alt=""
+            class="mainlogo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="./aboutUs.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-ltr active"
+                aria-current="page"
+                href="./products.html"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="herosection">
+      <div class="herocontainer">
+        <div
+          class="herooverlay d-flex flex-column justify-content-center align-items-center"
+        >
+          <h3>United Cocoa <br />Product Limited</h3>
+          <p>Everything Cocoa</p>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footerContainer">
-        <div class="footerLogo">
-          <img src="./assets/pngegg-removebg-preview.png" alt="" class="LOGO" />
-        </div>
 
-        <div class="navigate">
-          <div class="navigate-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="./aboutUs.html">About Us</a></li>
-              <li><a href="./contact.html">Contact Us</a></li>
-              <li><a href="">Products</a></li>
+    <div class="">
+      <div
+        class="prodsection d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="prodtitle">
+          <h1>Our Awesome Products</h1>
+        </div>
+        <div
+          class="prodcontent d-flex flex-sm-column flex-md-row justify-content-center align-items-center"
+        >
+          <div class="prodcard">
+            <img src="./assets/cocoamass.jpg" alt="" />
+            <h3>Cocoa Mass</h3>
+            <p>
+              Our natural cocoa powder is made from the finest cocoa beans,
+              providing a rich and authentic flavor for all your baking needs.
+            </p>
+          </div>
+          <div class="prodcard">
+            <img src="./assets/cocoaliquor.jpg" alt="" />
+            <h3>Cocoa Liquor</h3>
+            <p>
+              Experience the exceptional quality of our Brownco product, crafted
+              from the finest cocoa beans sourced directly from Ghana.
+            </p>
+          </div>
+          <div class="prodcard">
+            <img src="./assets/cocoabutter.jpg" alt="" />
+            <h3>Cocoa Butter</h3>
+            <p>
+              Experience the exceptional quality of our Brownco product, crafted
+              from the finest cocoa beans sourced directly from Ghana.
+            </p>
+          </div>
+        </div>
+        <div
+          class="prodcontent mt-md-4 d-flex flex-sm-column flex-md-row justify-content-center align-items-center"
+        >
+          <div class="prodcard">
+            <img src="./assets/_MG_0059.JPG" alt="" />
+            <h3>Cocoa Powder</h3>
+            <p>
+              Our natural cocoa powder is made from the finest cocoa beans,
+              providing a rich and authentic flavor for all your baking needs.
+            </p>
+          </div>
+          <div class="prodcard">
+            <img src="./assets/_MG_9977.JPG" alt="" />
+            <h3>Brownco</h3>
+            <p>
+              Experience the exceptional quality of our Brownco product, crafted
+              from the finest cocoa beans sourced directly from Ghana.
+            </p>
+          </div>
+          <div class="prodcard">
+            <img src="./assets/cocoabag.jpg" alt="" />
+            <h3>Cocoa Bag</h3>
+            <p>
+              Experience the exceptional quality of our Brownco product, crafted
+              from the finest cocoa beans sourced directly from Ghana.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <marquee
+          >We have Natural Cocoa Butter | Deodorised Cocoa Butter | Natural
+          Cocoa Powder | Alkalised Cocoa Powder | Cocoa Mass | Cocoa Liquor |
+          Cocoa Cake | Cocoa Cake Powder | Cocoa Cake Powder | Cocoa
+        </marquee>
+      </div>
+    </div>
+    <div class="topsection">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footertitle">
+            <h1>Our Products</h1>
+            <ul class="footerlinks">
+              <li class="footerlink">Cocoa Mass</li>
+              <li class="footerlink">Cocoa Liquor</li>
+              <li class="footerlink">Cocoa Butter</li>
+              <li class="footerlink">Brownco</li>
             </ul>
           </div>
         </div>
-        <div class="socialIcons">
+        <div class="col-md-4">
+          <div class="footertitle">
+            <h1>Links</h1>
+            <ul class="footerlinks">
+              <li class="footerlink"><a href="">Home</a></li>
+              <li class="footerlink"><a href="">About Us</a></li>
+              <li class="footerlink"><a href="">Our Products</a></li>
+              <li class="footerlink"><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footertitle">
+            <h1>Contact Us</h1>
+            <ul class="footerlinks">
+              <li class="footerlink">
+                Headquaters 7 Trakor Street Accra, Ghana
+              </li>
+              <li class="footerlink">
+                Hours of operation Monday - Friday 08:00 am - 6:30pm
+              </li>
+              <li>+233 27 655 1613 | +233 50 851 8597</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footerbottom d-flex flex-column justify-content-center align-items-center"
+      >
+        <div
+          class="socialiconcontainer d-flex justify-content-between align-items-center"
+        >
           <a href=""><i class="fa-brands fa-facebook"></i></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
           <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
+        <div class="copyrightcontainer">
+          <p class="copyright">
+            Copyright &copy; <span class="showCurrentYear"></span> United Cocoa
+            Limited
+          </p>
+        </div>
       </div>
+    </div>
+    <!-- Scripts -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-      <div class="footerBottom">
-        <p>
-          &copy; <span id="show-year"></span> United Cocoa Product Limited. All
-          rights reserved.
-        </p>
-      </div>
-    </footer>
-    <script src="carousel.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
