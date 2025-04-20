@@ -308,6 +308,10 @@ nav li {
   margin: 0;
 }
 
+.hear-from-you{
+  text-align: center;
+}
+
 /* Mobile devices (widths up to 599px) */
 @media (max-width: 599px) {
   .herocontainer,
@@ -458,7 +462,15 @@ nav li {
   }
 
   iframe{
-    height: var(--herosection-phone-height);
+    height: var(--herosection-tablet-height);
+  }
+
+  .hear-from-you{
+    padding:25px;
+  }
+
+  #contact-form{
+    padding:30px 50px;
   }
 
   /* End of Product Section */
