@@ -295,5 +295,53 @@
       crossorigin="anonymous"
     ></script>
     <script src="./main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get("status");
+
+        // Create message container if status parameter exists
+        if (status) {
+          const messageContainer = document.createElement("div");
+
+          if (status === "success") {
+            messageContainer.innerHTML =
+              "<strong>Success!</strong> Your message has been sent successfully. We will get back to you soon.";
+            messageContainer.style.color = "green";
+            messageContainer.style.backgroundColor = "#e8f5e9";
+          } else {
+            messageContainer.innerHTML =
+              "<strong>Error!</strong> Failed to send your message. Please try again later.";
+            messageContainer.style.color = "#721c24";
+            messageContainer.style.backgroundColor = "#f8d7da";
+          }
+
+          // Style the container
+          messageContainer.style.padding = "10px";
+          messageContainer.style.borderRadius = "5px";
+          messageContainer.style.textAlign = "center";
+          messageContainer.style.marginBottom = "20px";
+
+          // Insert at the beginning of the form or another appropriate location
+          const form = document.querySelector("form");
+          if (form) {
+            form.parentNode.insertBefore(messageContainer, form);
+          } else {
+            document.body.insertBefore(
+              messageContainer,
+              document.body.firstChild
+            );
+          }
+
+          // Remove the status parameter from URL to prevent showing message on refresh
+          window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname
+          );
+        }
+      });
+    </script>
   </body>
 </html>

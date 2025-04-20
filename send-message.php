@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = 'david@unitedcocoaltd.com';
     
     // Email subject
-    $subject = 'New Message from Contact Form';
+    $subject = 'New Message from the Website Contact Form';
     
     // HTML email body
     $htmlBody = '
