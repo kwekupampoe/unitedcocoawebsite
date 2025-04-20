@@ -124,55 +124,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: multipart/alternative; boundary=\"boundary\"\r\n";
     
     // Email content with multipart boundary
-    $message = "--boundary\r\n";
-    $message .= "Content-Type: text/plain; charset=UTF-8\r\n";
-    $message .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $message .= $plainBody . "\r\n\r\n";
-    $message .= "--boundary\r\n";
-    $message .= "Content-Type: text/html; charset=UTF-8\r\n";
-    $message .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $message .= $htmlBody . "\r\n\r\n";
-    $message .= "--boundary--";
+    $emailMessage = "--boundary\r\n";
+    $emailMessage .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $emailMessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    $emailMessage .= $plainBody . "\r\n\r\n";
+    $emailMessage .= "--boundary\r\n";
+    $emailMessage .= "Content-Type: text/html; charset=UTF-8\r\n";
+    $emailMessage .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+    $emailMessage .= $htmlBody . "\r\n\r\n";
+    $emailMessage .= "--boundary--";
     
-    // Send email and store result
-    $emailSent = mail($to, $subject, $message, $headers);
+    // Send email
+    $emailSent = mail($to, $subject, $emailMessage, $headers);
     
-    // Set session variable for success/error message
-    session_start();
-    if ($emailSent) {
-        $_SESSION['contact_message'] = 'success';
-    } else {
-        $_SESSION['contact_message'] = 'error';
+    // Determine the contact page URL
+    // Option 1: Get referring page
+    $contactPage = $_SERVER['HTTP_REFERER'] ?? '';
+    
+    // Option 2: If referer is not available, try to construct URL
+    if (empty($contactPage)) {
+        // Remove the filename from the current script path to get directory
+        $directory = dirname($_SERVER['PHP_SELF']);
+        // Construct URL to contact page (assuming it's named contact.html, .php, etc.)
+        // Try multiple common filenames
+        $possibleFiles = ['contact.html', 'contact.php', 'index.html', 'index.php'];
+        
+        // Default to site root if we can't determine the page
+        $contactPage = '/';
     }
     
-    // Redirect back to contact page
-    header('Location: contact.php');
+    // Add query parameter for status message
+    $redirectUrl = $contactPage . (strpos($contactPage, '?') ? '&' : '?') . 'status=' . ($emailSent ? 'success' : 'error');
+    
+    // JavaScript redirect (more reliable than header redirect in some cases)
+    echo '<script>window.location.href = "' . $redirectUrl . '";</script>';
+    
+    // Fallback for if JavaScript is disabled
+    echo '<p>Message ' . ($emailSent ? 'sent' : 'failed') . '. <a href="' . $contactPage . '">Click here</a> to return to the contact page.</p>';
     exit;
     
 } else {
-    // Redirect back to contact page if accessed directly
-    header('Location: contact.php');
+    // If accessed directly, try to redirect to contact page
+    echo '<p>Invalid request. <a href="/">Click here</a> to return to the homepage.</p>';
     exit;
-}
-?>
-
-
-<?php
-session_start();
-
-// Check if we have a message to display
-if (isset($_SESSION['contact_message'])) {
-    if ($_SESSION['contact_message'] === 'success') {
-        echo '<div style="color: green; padding: 10px; background-color: #e8f5e9; border-radius: 5px; text-align: center; margin-bottom: 20px;">
-                <strong>Success!</strong> Your message has been sent successfully. We will get back to you soon.
-              </div>';
-    } else {
-        echo '<div style="color: #721c24; padding: 10px; background-color: #f8d7da; border-radius: 5px; text-align: center; margin-bottom: 20px;">
-                <strong>Error!</strong> Failed to send your message. Please try again later.
-              </div>';
-    }
-    
-    // Clear the message so it doesn't show again on refresh
-    unset($_SESSION['contact_message']);
 }
 ?>
