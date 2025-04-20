@@ -321,17 +321,14 @@
           messageContainer.style.padding = "10px";
           messageContainer.style.borderRadius = "5px";
           messageContainer.style.textAlign = "center";
-          messageContainer.style.marginBottom = "20px";
+          messageContainer.style.marginTop = "20px";
 
-          // Insert at the beginning of the form or another appropriate location
-          const form = document.querySelector("form");
-          if (form) {
-            form.parentNode.insertBefore(messageContainer, form);
-          } else {
-            document.body.insertBefore(
-              messageContainer,
-              document.body.firstChild
-            );
+          // Insert after the submit button row
+          const submitButtonRow = document.querySelector(
+            "form .row:last-child"
+          );
+          if (submitButtonRow) {
+            submitButtonRow.after(messageContainer);
           }
 
           // Remove the status parameter from URL to prevent showing message on refresh
