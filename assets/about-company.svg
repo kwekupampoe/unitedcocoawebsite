@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Company Building -->
+  <rect x="100" y="150" width="300" height="250" fill="#5b4021" rx="10"/>
+  <rect x="150" y="200" width="60" height="80" fill="#ead72a" rx="5"/>
+  <rect x="290" y="200" width="60" height="80" fill="#ead72a" rx="5"/>
+  <rect x="220" y="300" width="60" height="100" fill="#ead72a" rx="5"/>
+  
+  <!-- Cocoa Tree Symbol -->
+  <circle cx="250" cy="100" r="50" fill="#5b4021"/>
+  <path d="M230,80 Q250,60 270,80 T290,100" fill="none" stroke="#ead72a" stroke-width="4"/>
+  <path d="M210,100 Q250,80 290,100" fill="none" stroke="#ead72a" stroke-width="4"/>
+  
+  <!-- Foundation Year -->
+  <text x="250" y="450" font-family="Arial" font-size="24" fill="#5b4021" text-anchor="middle">Est. 2006</text>
+</svg> 

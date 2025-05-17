@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Target Circles -->
+  <circle cx="250" cy="250" r="150" fill="none" stroke="#5b4021" stroke-width="8"/>
+  <circle cx="250" cy="250" r="100" fill="none" stroke="#5b4021" stroke-width="8"/>
+  <circle cx="250" cy="250" r="50" fill="#ead72a"/>
+  
+  <!-- Arrows -->
+  <path d="M100,250 L200,250" stroke="#5b4021" stroke-width="8" marker-end="url(#arrowhead)"/>
+  <path d="M250,100 L250,200" stroke="#5b4021" stroke-width="8" marker-end="url(#arrowhead)"/>
+  <path d="M400,250 L300,250" stroke="#5b4021" stroke-width="8" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5b4021"/>
+    </marker>
+  </defs>
+  
+  <!-- Growth Indicators -->
+  <path d="M150,350 L200,300 L250,320 L300,280 L350,250" fill="none" stroke="#ead72a" stroke-width="4"/>
+</svg> 

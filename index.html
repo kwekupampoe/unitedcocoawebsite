@@ -1,241 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="United Cocoa Limited - Everything Cocoa. Discover our high-quality cocoa products, crafted sustainably from the finest cocoa beans in Ghana." />
-    <meta name="keywords" content="Cocoa, Cocoa Products, Cocoa Powder, Cocoa Butter, Cocoa Mass, Cocoa Liquor, Sustainable Cocoa, Ghana Cocoa, United Cocoa Limited" />
-    <meta name="author" content="United Cocoa Limited" />
-    <meta name="robots" content="index, follow" />
-    <title>United Cocoa Limited | Everything Cocoa</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="icon"
-      href="./assets/Untitled design (1).png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <div id="smoothpreloader">
-      <div id="smoothpreloadercontainer">
-        <img src="./assets/cocoamass.jpg" alt="cocoa powder" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="United Cocoa Limited - Everything Cocoa. Discover our high-quality cocoa products, crafted sustainably from the finest cocoa beans in Ghana." />
+  <meta name="keywords"
+    content="Cocoa, Cocoa Products, Cocoa Powder, Cocoa Butter, Cocoa Mass, Cocoa Liquor, Sustainable Cocoa, Ghana Cocoa, United Cocoa Limited" />
+  <meta name="author" content="United Cocoa Limited" />
+  <meta name="robots" content="index, follow" />
+  <title>United Cocoa Limited | Everything Cocoa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="./assets/Untitled design (1).png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <!-- <div id="smoothpreloader">
+    <div id="smoothpreloadercontainer">
+      <img src="./assets/cocoamass.jpg" alt="cocoa powder" />
+    </div>
+  </div> -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/pngegg-removebg-preview.png" alt="United Cocoa Logo" class="mainlogo" />
+        <span class="brand-text">United Cocoa</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutUs.html">
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">
+              <span>Products</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/pngegg-removebg-preview.png"
-            alt=""
-            class="mainlogo"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ml-0 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link nav-link-ltr active"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-ltr" href="./aboutUs.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-ltr" href="./products.html"
-                >Products</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-ltr" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="herosection">
-      <div class="herocontainer">
-        <div
-          class="herooverlay d-flex flex-column justify-content-center align-items-center"
-        >
-          <h3>United Cocoa <br />Product Limited</h3>
-          <p>Everything Cocoa</p>
-        </div>
-      </div>
+  </nav>
+  <div class="nav-spacer"></div>
+  <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Cocoa Mass"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Cocoa Liquor"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Cocoa Powder"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Brownco"></button>
     </div>
-    <div class="topsection">
-      <div class="missionsection d-flex flex-column">
-        <h1>Mission</h1>
-        <p>
-          Our mission is to be the leading supplier of high-quality cocoa
-          products in the industry. We are committed to sustainability,
-          innovation, and customer satisfaction. We aim to provide our customers
-          with the best cocoa products while ensuring that our operations are
-          environmentally friendly and socially responsible.
-        </p>
-        <a href="./aboutUs.html">Learn More</a>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('./assets/cocoamass.jpg');">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="hero-content">
+            <span class="product-badge">Premium Quality</span>
+            <h1>The Finest Cocoa Mass</h1>
+            <p>Crafted from select Ghana cocoa beans, delivering pure, rich flavor in every batch</p>
+            <a href="./products.html" class="learn-more-btn">
+              <span>Explore Products</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('./assets/cocoaliquor.jpg');">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="hero-content">
+            <span class="product-badge">Master Crafted</span>
+            <h1>Pure Cocoa Liquor</h1>
+            <p>The essence of chocolate making, perfected through generations of expertise</p>
+            <a href="./products.html" class="learn-more-btn">
+              <span>Discover More</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('./assets/_MG_0059.JPG');">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="hero-content">
+            <span class="product-badge">Natural Goodness</span>
+            <h1>Premium Cocoa Powder</h1>
+            <p>Elevate your creations with our finely processed cocoa powder</p>
+            <a href="./products.html" class="learn-more-btn">
+              <span>Learn More</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('./assets/_MG_9977.JPG');">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="hero-content">
+            <span class="product-badge">Signature Product</span>
+            <h1>Brownco Excellence</h1>
+            <p>Experience the pinnacle of cocoa refinement</p>
+            <a href="./products.html" class="learn-more-btn">
+              <span>View Details</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="topsection">
-      <div class="discoversection d-flex flex-md-row">
-        <div
-          class="discoverimage d-flex justify-content-md-center align-items-md-center p-sm-0 p-md-5"
-        >
-          <img src="./assets/rodrigo-flores-EXcebySSEMo-unsplash.jpg" alt="" />
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section class="discover-section">
+    <div class="container">
+      <div class="discover-grid">
+        <!-- Natural Cocoa Powder -->
+        <div class="discover-item" data-aos="fade-up">
+          <div class="discover-image">
+            <img src="./assets/rodrigo-flores-EXcebySSEMo-unsplash.jpg" alt="Natural Cocoa Powder" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="discover-content">
+            <div class="content-wrapper">
+              <span class="discover-badge">Premium Product</span>
+              <h2>Natural Cocoa Powder</h2>
+              <div class="feature-list">
+                <div class="feature-item">
+                  <i class="fas fa-heart"></i>
+                  <span>Rich in antioxidants</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-leaf"></i>
+                  <span>Sustainably sourced</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Premium quality</span>
+                </div>
+              </div>
+              <p>
+                Indulge in our exquisite natural cocoa powder, crafted from Ghana's finest cocoa beans.
+                This premium product delivers not just exceptional taste, but also remarkable health benefits,
+                promoting heart health and overall wellbeing while supporting sustainable farming practices.
+              </p>
+              <a href="./products.html" class="discover-btn">
+                Explore More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div
-          class="discovercontent d-flex flex-column align-items-center justify-content-center p-md-5"
-        >
-          <h3>Discover the Amazing Benefits of Our Natural Cocoa Powder</h3>
-          <p>
-            Our natural cocoa powder not only tastes delicious, but it also
-            offers numerous health benefits. Made from the finest cocoa beans
-            sourced directly from local farmers in Ghana, our cocoa powder is
-            rich in antioxidants and minerals that promote heart health and
-            boost your mood. By choosing our product, you are supporting
-            sustainable farming practices and helping to improve the livelihoods
-            of our dedicated farmers.
-          </p>
+
+        <!-- Brownco Product -->
+        <div class="discover-item reverse" data-aos="fade-up" data-aos-delay="100">
+          <div class="discover-image">
+            <img src="./assets/_MG_9978.JPG" alt="Brownco Product" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="discover-content">
+            <div class="content-wrapper">
+              <span class="discover-badge">Featured Product</span>
+              <h2>Brownco Excellence</h2>
+              <div class="feature-list">
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>Premium texture</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-medal"></i>
+                  <span>Award-winning taste</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-certificate"></i>
+                  <span>Quality certified</span>
+                </div>
+              </div>
+              <p>
+                Experience the pinnacle of cocoa refinement with our signature Brownco product.
+                Meticulously crafted from select Ghana cocoa beans, it offers an unparalleled
+                velvety texture and rich taste profile, perfect for both culinary creations and
+                premium beverages.
+              </p>
+              <a href="./products.html" class="discover-btn">
+                Learn More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="topsection">
-      <div class="discoversection d-flex">
-        <div
-          class="discoverimage d-flex justify-content-center align-items-center p-sm-0 p-md-5 order-sm-1 order-md-2"
-        >
-          <img src="./assets/_MG_9978.JPG" alt="" style="width: 100%" />
+  </section>
+
+  <div class="product-sections">
+    <div class="product-detail-section">
+      <div class="section-header main-title">
+        <h2>Our Premium Products</h2>
+      </div>
+      <div class="section-header text-center">
+        <h2>Cocoa Mass / Liquor</h2>
+        <p class="section-description">
+          Experience the essence of pure cocoa in our premium Cocoa Mass/Liquor. Crafted from the finest handpicked
+          cocoa beans,
+          our product delivers exceptional quality and rich flavor profiles that elevate any chocolate creation. Perfect
+          for
+          artisanal chocolatiers and industrial manufacturers alike.
+        </p>
+      </div>
+      <div id="cocoaMassCarousel" class="carousel slide detail-carousel" data-bs-ride="carousel"
+        data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="detail-content d-flex justify-content-center">
+              <div class="detail-card">
+                <img src="./assets/cocoamass.png" alt="Premium Cocoa Mass Production" />
+                <div class="card-content">
+                  <h3>Artisanal Production</h3>
+                  <p>
+                    Our state-of-the-art production process combines traditional craftsmanship with modern technology.
+                    Each batch
+                    is carefully monitored to ensure perfect roasting, grinding, and refining, resulting in cocoa mass
+                    with
+                    exceptional flavor development and smooth texture.
+                  </p>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img src="./assets/cocoaliquor.jpg" alt="Quality Control Process" />
+                <div class="card-content">
+                  <h3>Quality Assurance</h3>
+                  <p>
+                    Every step of our production undergoes rigorous quality control. From bean selection to final
+                    processing,
+                    we maintain strict standards to ensure consistent flavor, optimal particle size, and perfect
+                    viscosity
+                    for various applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="detail-content d-flex justify-content-center">
+              <div class="detail-card">
+                <img src="./assets/cocoamass.png" alt="Versatile Applications" />
+                <div class="card-content">
+                  <h3>Versatile Uses</h3>
+                  <p>
+                    Our cocoa mass is the perfect foundation for premium chocolate products, confectionery items, and
+                    specialized food applications. Its balanced flavor profile and consistent quality make it the
+                    preferred
+                    choice for master chocolatiers worldwide.
+                  </p>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img src="./assets/cocoaliquor.jpg" alt="Premium Storage Solutions" />
+                <div class="card-content">
+                  <h3>Expert Storage</h3>
+                  <p>
+                    Preserve the excellence of our cocoa mass with our specialized storage solutions. We provide
+                    comprehensive
+                    guidelines for temperature control, humidity management, and handling procedures to maintain optimal
+                    quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div
-          class="discovercontent d-flex flex-column align-items-center justify-content-center p-sm-0 p-md-5"
-        >
-          <h3>Discover the Amazing Brownco Product</h3>
-          <p>
-            Experience the exceptional quality of our Brownco product, crafted
-            from the finest cocoa beans sourced directly from Ghana. Our Brownco
-            product is a testament to our commitment to excellence, offering a
-            rich, velvety texture and an unparalleled taste. Perfect for baking,
-            beverages, or as a healthy addition to your diet, it is packed with
-            antioxidants and essential nutrients. By choosing Brownco, you are
-            not only indulging in premium cocoa but also supporting sustainable
-            farming and empowering local communities.
-          </p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#cocoaMassCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cocoaMassCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-detail-section">
+      <div class="section-header text-center">
+        <h2>Premium Cocoa Powder</h2>
+        <p class="section-description">
+          Discover our exceptional Cocoa Powder, where rich flavor meets versatile functionality. Meticulously processed
+          to
+          achieve the perfect balance of taste and performance, our powder boasts an intense chocolate profile and
+          stunning
+          dark-brown color. With a carefully controlled fat content of 10-12%, it's the ideal choice for
+          health-conscious
+          recipes without compromising on taste.
+        </p>
+      </div>
+      <div id="cocoaPowderCarousel" class="carousel slide detail-carousel" data-bs-ride="carousel"
+        data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="detail-content d-flex justify-content-center">
+              <div class="detail-card">
+                <img src="./assets/_MG_0059.JPG" alt="Natural Cocoa Powder Excellence" />
+                <div class="card-content">
+                  <h3>Natural Excellence</h3>
+                  <p>
+                    Our natural cocoa powder captures the true essence of premium cocoa beans. Perfect for artisanal
+                    baking
+                    and professional applications, it delivers rich chocolate flavor and beautiful color. The ultra-fine
+                    grinding ensures smooth incorporation into any recipe.
+                  </p>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img src="./assets/_MG_9977.JPG" alt="Brownco Premium Blend" />
+                <div class="card-content">
+                  <h3>Brownco Premium</h3>
+                  <p>
+                    Experience our signature Brownco blend, crafted for luxury chocolate beverages and premium
+                    confectionery.
+                    This specialized formula offers enhanced flavor complexity and superior dissolution properties,
+                    making it
+                    the professional's choice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="detail-content d-flex justify-content-center">
+              <div class="detail-card">
+                <img src="./assets/_MG_0059.JPG" alt="Professional Applications" />
+                <div class="card-content">
+                  <h3>Professional Grade</h3>
+                  <p>
+                    From luxury chocolates to premium ice creams, our cocoa powder elevates every creation. Its
+                    versatility
+                    and consistent performance make it ideal for both artisanal production and large-scale
+                    manufacturing,
+                    delivering excellence in every application.
+                  </p>
+                </div>
+              </div>
+              <div class="detail-card">
+                <img src="./assets/_MG_9977.JPG" alt="Health Benefits" />
+                <div class="card-content">
+                  <h3>Wellness Benefits</h3>
+                  <p>
+                    Rich in antioxidants and essential minerals, our cocoa powder offers more than just great taste.
+                    With its
+                    optimal fat content and natural processing, it's the perfect choice for health-conscious consumers
+                    who
+                    refuse to compromise on flavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#cocoaPowderCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cocoaPowderCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="management-section">
+    <div class="container">
+      <div class="management-title">
+        <h2>Our Leadership Team</h2>
+        <p>Meet the dedicated professionals who drive our vision forward, ensuring excellence in every aspect of our
+          operations.</p>
+      </div>
+      <div class="management-grid">
+        <div class="manager-card" data-aos="fade-up">
+          <div class="manager-image">
+            <img src="./assets/team.jpg" alt="John Smith - CEO" />
+          </div>
+          <div class="manager-info">
+            <h3>Fiifi Pappoe</h3>
+            <span class="position">Chief Executive Officer</span>
+            <p>With over 20 years of experience in the cocoa industry, John leads our company's strategic vision and
+              global operations.</p>
+            <div class="manager-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="manager-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="manager-image">
+            <img src="./assets/team.jpg" alt="Sarah Johnson - COO" />
+          </div>
+          <div class="manager-info">
+            <h3>Enoch </h3>
+            <span class="position">Chief Operations Officer</span>
+            <p>Enoch oversees our day-to-day operations, ensuring the highest quality standards in our production
+              processes.</p>
+            <div class="manager-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="manager-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="manager-image">
+            <img src="./assets/team.jpg" alt="Michael Kwesi - Technical Director" />
+          </div>
+          <div class="manager-info">
+            <h3>Derrick</h3>
+            <span class="position">Technical Director</span>
+            <p>Derrick brings technical expertise to our production, leading innovation and quality control initiatives.
+            </p>
+            <div class="manager-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="">
-      <div
-        class="prodsection d-flex flex-column justify-content-center align-items-center"
-      >
-        <div class="prodtitle">
-          <h1>Our Awesome Products</h1>
-        </div>
-        <div
-          class="prodcontent d-flex flex-sm-column flex-md-row justify-content-center align-items-center"
-        >
-          <div class="prodcard">
-            <img src="./assets/cocoamass.jpg" alt="" />
-            <h3>Cocoa Mass</h3>
-            <p>
-              Our natural cocoa powder is made from the finest cocoa beans,
-              providing a rich and authentic flavor for all your baking needs.
-            </p>
-          </div>
-          <div class="prodcard">
-            <img src="./assets/cocoaliquor.jpg" alt="" />
-            <h3>Cocoa Liquor</h3>
-            <p>
-              Experience the exceptional quality of our Brownco product, crafted
-              from the finest cocoa beans sourced directly from Ghana.
-            </p>
-          </div>
-          <div class="prodcard">
-            <img src="./assets/cocoabutter.jpg" alt="" />
-            <h3>Cocoa Butter</h3>
-            <p>
-              Experience the exceptional quality of our Brownco product, crafted
-              from the finest cocoa beans sourced directly from Ghana.
-            </p>
-          </div>
-        </div>
-        <div
-          class="prodcontent mt-md-4 d-flex flex-sm-column flex-md-row justify-content-center align-items-center"
-        >
-          <div class="prodcard">
-            <img src="./assets/_MG_0059.JPG" alt="" />
-            <h3>Cocoa Powder</h3>
-            <p>
-              Our natural cocoa powder is made from the finest cocoa beans,
-              providing a rich and authentic flavor for all your baking needs.
-            </p>
-          </div>
-          <div class="prodcard">
-            <img src="./assets/_MG_9977.JPG" alt="" />
-            <h3>Brownco</h3>
-            <p>
-              Experience the exceptional quality of our Brownco product, crafted
-              from the finest cocoa beans sourced directly from Ghana.
-            </p>
-          </div>
-          <div class="prodcard">
-            <img src="./assets/cocoabag.jpg" alt="" />
-            <h3>Cocoa Bag</h3>
-            <p>
-              Experience the exceptional quality of our Brownco product, crafted
-              from the finest cocoa beans sourced directly from Ghana.
-            </p>
-          </div>
-        </div>
+  </section>
+
+  <div>
+    <section class="product-ticker-section">
+      <div class="product-ticker">
+        <div class="ticker-item">Natural Cocoa Butter</div>
+        <div class="ticker-item">Deodorised Cocoa Butter</div>
+        <div class="ticker-item">Natural Cocoa Powder</div>
+        <div class="ticker-item">Alkalised Cocoa Powder</div>
+        <div class="ticker-item">Cocoa Mass</div>
+        <div class="ticker-item">Cocoa Liquor</div>
+        <div class="ticker-item">Cocoa Cake</div>
+        <!-- Duplicate items for seamless loop -->
+        <div class="ticker-item">Natural Cocoa Butter</div>
+        <div class="ticker-item">Deodorised Cocoa Butter</div>
+        <div class="ticker-item">Natural Cocoa Powder</div>
+        <div class="ticker-item">Alkalised Cocoa Powder</div>
+        <div class="ticker-item">Cocoa Mass</div>
+        <div class="ticker-item">Cocoa Liquor</div>
+        <div class="ticker-item">Cocoa Cake</div>
       </div>
-      <div>
-        <marquee
-          >We have Natural Cocoa Butter | Deodorised Cocoa Butter | Natural
-          Cocoa Powder | Alkalised Cocoa Powder | Cocoa Mass | Cocoa Liquor |
-          Cocoa Cake | Cocoa Cake Powder | Cocoa Cake Powder | Cocoa
-        </marquee>
-      </div>
-    </div>
-    <div class="topsection">
-      <div class="row">
-        <div class="col-md-4">
+    </section>
+  </div>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-4">
           <div class="footertitle">
             <h1>Our Products</h1>
             <ul class="footerlinks">
@@ -246,64 +498,60 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-12 col-sm-6 col-md-4">
           <div class="footertitle">
             <h1>Links</h1>
             <ul class="footerlinks">
-              <li class="footerlink"><a href="">Home</a></li>
-              <li class="footerlink"><a href="">About Us</a></li>
-              <li class="footerlink"><a href="">Our Products</a></li>
-              <li class="footerlink"><a href="">Contact</a></li>
+              <li class="footerlink"><a href="index.html">Home</a></li>
+              <li class="footerlink"><a href="./aboutUs.html">About Us</a></li>
+              <li class="footerlink"><a href="./products.html">Our Products</a></li>
+              <li class="footerlink"><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-12 col-sm-12 col-md-4">
           <div class="footertitle">
             <h1>Contact Us</h1>
             <ul class="footerlinks">
               <li class="footerlink">
-                Headquaters 7 Trakor Street Accra, Ghana
+                <i class="fas fa-map-marker-alt me-2"></i> Headquarters 7 Trakor Street Accra, Ghana
               </li>
               <li class="footerlink">
-                Hours of operation Monday - Friday 08:00 am - 6:30pm
+                <i class="far fa-clock me-2"></i> Monday - Friday 08:00 am - 6:30pm
               </li>
-              <li>+233 27 655 1613 | +233 50 851 8597</li>
+              <li class="footerlink">
+                <i class="fas fa-phone me-2"></i> 0302 261 080
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div
-        class="footerbottom d-flex flex-column justify-content-center align-items-center"
-      >
-        <div
-          class="socialiconcontainer d-flex justify-content-between align-items-center"
-        >
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
+      <div class="footerbottom d-flex flex-column justify-content-center align-items-center">
+        <div class="socialiconcontainer d-flex flex-wrap justify-content-center align-items-center gap-3">
+          <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="copyrightcontainer">
           <p class="copyright">
             Copyright &copy; <span class="showCurrentYear"></span> United Cocoa
-            Limited
+            Limited. All rights reserved.
           </p>
         </div>
       </div>
     </div>
-    <!-- Scripts -->
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </footer>
+  <!-- Scripts -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
 </html>

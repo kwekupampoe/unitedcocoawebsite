@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vision Eye -->
+  <circle cx="250" cy="250" r="100" fill="#5b4021"/>
+  <circle cx="250" cy="250" r="40" fill="#ead72a"/>
+  <circle cx="250" cy="250" r="20" fill="#5b4021"/>
+  
+  <!-- Light Rays -->
+  <path d="M150,250 L100,250" stroke="#ead72a" stroke-width="8"/>
+  <path d="M350,250 L400,250" stroke="#ead72a" stroke-width="8"/>
+  <path d="M250,150 L250,100" stroke="#ead72a" stroke-width="8"/>
+  <path d="M250,350 L250,400" stroke="#ead72a" stroke-width="8"/>
+  
+  <!-- Diagonal Rays -->
+  <path d="M180,180 L150,150" stroke="#ead72a" stroke-width="8"/>
+  <path d="M320,180 L350,150" stroke="#ead72a" stroke-width="8"/>
+  <path d="M180,320 L150,350" stroke="#ead72a" stroke-width="8"/>
+  <path d="M320,320 L350,350" stroke="#ead72a" stroke-width="8"/>
+</svg> 
