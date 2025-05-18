@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="icon" href="./assets/Untitled design (1).png" type="image/x-icon" />
+  <link rel="icon" href="./assets/pngegg-removebg-preview.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,14 +25,20 @@
 </head>
 
 <body>
-  <!-- <div id="smoothpreloader">
+  <div id="smoothpreloader">
     <div id="smoothpreloadercontainer">
-      <img src="./assets/cocoamass.jpg" alt="cocoa powder" />
+      <div class="loader-logo">
+        <img src="./assets/pngegg-removebg-preview.png" alt="United Cocoa Logo" />
+      </div>
+      <div class="loader-progress">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-text">United Cocoa Limited</div>
     </div>
-  </div> -->
+  </div>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="./assets/pngegg-removebg-preview.png" alt="United Cocoa Logo" class="mainlogo" />
         <span class="brand-text">United Cocoa</span>
       </a>
@@ -78,7 +84,23 @@
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Brownco"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="background-image: url('./assets/cocoamass.jpg');">
+
+      <div class="carousel-item active" style="background-image: url('./assets/_MG_0092.JPG'); background-size: cover;">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="hero-content">
+            <span class="product-badge">Signature Product</span>
+            <h1>Brownco Excellence</h1>
+            <p>Experience the pinnacle of cocoa refinement</p>
+            <a href="./products.html" class="learn-more-btn">
+              <span>View Details</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item"
+        style="background-image: url('./assets/cocoamass.png'); background-size: cover; background-position: 40% 30%;">
         <div class="d-flex align-items-center justify-content-center h-100">
           <div class="hero-content">
             <span class="product-badge">Premium Quality</span>
@@ -86,20 +108,6 @@
             <p>Crafted from select Ghana cocoa beans, delivering pure, rich flavor in every batch</p>
             <a href="./products.html" class="learn-more-btn">
               <span>Explore Products</span>
-              <i class="fas fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item" style="background-image: url('./assets/cocoaliquor.jpg');">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <div class="hero-content">
-            <span class="product-badge">Master Crafted</span>
-            <h1>Pure Cocoa Liquor</h1>
-            <p>The essence of chocolate making, perfected through generations of expertise</p>
-            <a href="./products.html" class="learn-more-btn">
-              <span>Discover More</span>
               <i class="fas fa-chevron-right"></i>
             </a>
           </div>
@@ -120,7 +128,8 @@
         </div>
       </div>
 
-      <div class="carousel-item" style="background-image: url('./assets/_MG_9977.JPG');">
+
+      <div class="carousel-item" style="background-image: url('./assets/_MG_0077.JPG'); background-size: cover;">
         <div class="d-flex align-items-center justify-content-center h-100">
           <div class="hero-content">
             <span class="product-badge">Signature Product</span>
@@ -152,7 +161,7 @@
         <!-- Natural Cocoa Powder -->
         <div class="discover-item" data-aos="fade-up">
           <div class="discover-image">
-            <img src="./assets/rodrigo-flores-EXcebySSEMo-unsplash.jpg" alt="Natural Cocoa Powder" />
+            <img src="./assets/_MG_0059.JPG" alt="Natural Cocoa Powder" />
             <div class="image-overlay"></div>
           </div>
           <div class="discover-content">
@@ -211,10 +220,9 @@
                 </div>
               </div>
               <p>
-                Experience the pinnacle of cocoa refinement with our signature Brownco product.
-                Meticulously crafted from select Ghana cocoa beans, it offers an unparalleled
-                velvety texture and rich taste profile, perfect for both culinary creations and
-                premium beverages.
+                A finely grounded, unsweetened powder made from natural cocoa cake with the fat levels between 10 – 12%.
+                It is a versatile ingredient use in various culinary applications particularly in baking it rich
+                chocolate flavour and colour. It is food on its own, good on the skin and face.
               </p>
               <a href="./products.html" class="discover-btn">
                 Learn More
@@ -235,11 +243,8 @@
       <div class="section-header text-center">
         <h2>Cocoa Mass / Liquor</h2>
         <p class="section-description">
-          Experience the essence of pure cocoa in our premium Cocoa Mass/Liquor. Crafted from the finest handpicked
-          cocoa beans,
-          our product delivers exceptional quality and rich flavor profiles that elevate any chocolate creation. Perfect
-          for
-          artisanal chocolatiers and industrial manufacturers alike.
+
+
         </p>
       </div>
       <div id="cocoaMassCarousel" class="carousel slide detail-carousel" data-bs-ride="carousel"
@@ -250,59 +255,32 @@
               <div class="detail-card">
                 <img src="./assets/cocoamass.png" alt="Premium Cocoa Mass Production" />
                 <div class="card-content">
-                  <h3>Artisanal Production</h3>
+                  <h3>Cocoa Mass / Liquor</h3>
                   <p>
-                    Our state-of-the-art production process combines traditional craftsmanship with modern technology.
-                    Each batch
-                    is carefully monitored to ensure perfect roasting, grinding, and refining, resulting in cocoa mass
-                    with
-                    exceptional flavor development and smooth texture.
+                    Produced from the finest cocoa beans on Earth (Ghana Cocoa) into a thick dark brown paste derived
+                    from the deshelled and roasted cocoa beans.
+                    Benefits of Liquor: it is linked to improved blood flow, reduced blood pressure and enhanced
+                    vascular function.
                   </p>
                 </div>
               </div>
               <div class="detail-card">
-                <img src="./assets/cocoaliquor.jpg" alt="Quality Control Process" />
+                <img src="./assets/cocoabutter.png" alt="Premium Cocoa Butter" />
                 <div class="card-content">
-                  <h3>Quality Assurance</h3>
+                  <h3>Cocoa Butter</h3>
                   <p>
-                    Every step of our production undergoes rigorous quality control. From bean selection to final
-                    processing,
-                    we maintain strict standards to ensure consistent flavor, optimal particle size, and perfect
-                    viscosity
-                    for various applications.
+                    Fat obtained from cocoa beans used in manufacture of confectionery and cosmetic product. This pale
+                    yellow, edible fat extraction can be used to make chocolate. Benefits of cocoa butter: improve blood
+                    flow to the skin and slow aging by protecting from the sun's harmful UV rays. Cocoa butter is used
+                    to smoothen scars, wrinkles and other marks on the skin.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="detail-content d-flex justify-content-center">
-              <div class="detail-card">
-                <img src="./assets/cocoamass.png" alt="Versatile Applications" />
-                <div class="card-content">
-                  <h3>Versatile Uses</h3>
-                  <p>
-                    Our cocoa mass is the perfect foundation for premium chocolate products, confectionery items, and
-                    specialized food applications. Its balanced flavor profile and consistent quality make it the
-                    preferred
-                    choice for master chocolatiers worldwide.
-                  </p>
-                </div>
-              </div>
-              <div class="detail-card">
-                <img src="./assets/cocoaliquor.jpg" alt="Premium Storage Solutions" />
-                <div class="card-content">
-                  <h3>Expert Storage</h3>
-                  <p>
-                    Preserve the excellence of our cocoa mass with our specialized storage solutions. We provide
-                    comprehensive
-                    guidelines for temperature control, humidity management, and handling procedures to maintain optimal
-                    quality.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#cocoaMassCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -317,15 +295,9 @@
 
     <div class="product-detail-section">
       <div class="section-header text-center">
-        <h2>Premium Cocoa Powder</h2>
+        <h2>Top Products</h2>
         <p class="section-description">
-          Discover our exceptional Cocoa Powder, where rich flavor meets versatile functionality. Meticulously processed
-          to
-          achieve the perfect balance of taste and performance, our powder boasts an intense chocolate profile and
-          stunning
-          dark-brown color. With a carefully controlled fat content of 10-12%, it's the ideal choice for
-          health-conscious
-          recipes without compromising on taste.
+
         </p>
       </div>
       <div id="cocoaPowderCarousel" class="carousel slide detail-carousel" data-bs-ride="carousel"
@@ -336,25 +308,24 @@
               <div class="detail-card">
                 <img src="./assets/_MG_0059.JPG" alt="Natural Cocoa Powder Excellence" />
                 <div class="card-content">
-                  <h3>Natural Excellence</h3>
+                  <h3>Cocoa Powder</h3>
                   <p>
-                    Our natural cocoa powder captures the true essence of premium cocoa beans. Perfect for artisanal
-                    baking
-                    and professional applications, it delivers rich chocolate flavor and beautiful color. The ultra-fine
-                    grinding ensures smooth incorporation into any recipe.
+                    It is a dark-brown powder used to make chocolate. This is the powdery remains of chocolate liquor
+                    after cocoa butter is removed. It is used in baking and low in fat (10 – 12%) and low-calorie
+                    recipes as a flavouring for ice cream and beverage industry. Its scientific name – Theobroma Cacao,
+                    which translates to "food of the gods". The ancient Mayans and Aztecs used Cacao as medicine for
+                    centuries.
                   </p>
                 </div>
               </div>
               <div class="detail-card">
-                <img src="./assets/_MG_9977.JPG" alt="Brownco Premium Blend" />
+                <img src="./assets/_MG_9977.JPG" alt="Brownco" />
                 <div class="card-content">
-                  <h3>Brownco Premium</h3>
+                  <h3>Brownco</h3>
                   <p>
-                    Experience our signature Brownco blend, crafted for luxury chocolate beverages and premium
-                    confectionery.
-                    This specialized formula offers enhanced flavor complexity and superior dissolution properties,
-                    making it
-                    the professional's choice.
+                    A finely grounded, unsweetened powder made from natural cocoa cake with the fat levels between 10 –
+                    12%. It is a versatile ingredient use in various culinary applications particularly in baking it
+                    rich chocolate flavour and colour. It is food on its own, good on the skin and face.
                   </p>
                 </div>
               </div>
@@ -363,28 +334,13 @@
           <div class="carousel-item">
             <div class="detail-content d-flex justify-content-center">
               <div class="detail-card">
-                <img src="./assets/_MG_0059.JPG" alt="Professional Applications" />
+                <img src="./assets/strongchoco.jpg" alt="Strong Choco" />
                 <div class="card-content">
-                  <h3>Professional Grade</h3>
+                  <h3>Strong Choco</h3>
                   <p>
-                    From luxury chocolates to premium ice creams, our cocoa powder elevates every creation. Its
-                    versatility
-                    and consistent performance make it ideal for both artisanal production and large-scale
-                    manufacturing,
-                    delivering excellence in every application.
-                  </p>
-                </div>
-              </div>
-              <div class="detail-card">
-                <img src="./assets/_MG_9977.JPG" alt="Health Benefits" />
-                <div class="card-content">
-                  <h3>Wellness Benefits</h3>
-                  <p>
-                    Rich in antioxidants and essential minerals, our cocoa powder offers more than just great taste.
-                    With its
-                    optimal fat content and natural processing, it's the perfect choice for health-conscious consumers
-                    who
-                    refuse to compromise on flavor.
+                    Strong Choco Natural Cocoa Powder, our version of highly concentrated powder made from the premium
+                    cocoa beans formulated to the highest level. This exceptional blend delivers intense flavor and
+                    robust chocolate character, perfect for applications requiring maximum cocoa impact.
                   </p>
                 </div>
               </div>
@@ -495,6 +451,7 @@
               <li class="footerlink">Cocoa Liquor</li>
               <li class="footerlink">Cocoa Butter</li>
               <li class="footerlink">Brownco</li>
+              <li class="footerlink">Strong Choco</li>
             </ul>
           </div>
         </div>

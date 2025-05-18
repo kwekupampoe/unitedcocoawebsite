@@ -48,22 +48,119 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: #5b4021;
+  background: linear-gradient(135deg, #5b4021 0%, #3c2a16 100%);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#smoothpreloader.fade-out {
+  opacity: 0;
 }
 
 #smoothpreloadercontainer {
   width: 100%;
   height: 100%;
   display: flex;
-  flex: 1;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
-#smoothpreloadercontainer img {
+.loader-logo {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+.loader-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(234, 215, 42, 0.3));
+}
+
+.loader-progress {
   width: 200px;
-  height: auto;
-  border-radius: 20px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #ead72a;
+  animation: progress 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(234, 215, 42, 0.5);
+}
+
+.loader-text {
+  color: #ead72a;
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .loader-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader-progress {
+    width: 160px;
+  }
+  
+  .loader-text {
+    font-size: 1rem;
+  }
 }
 
 .learn-more-btn {
