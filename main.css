@@ -3190,6 +3190,12 @@ nav li {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  .contact-info {
+    display: none;
+  }
+}
+
 /* Map Section */
 .map-section {
   margin-bottom: 0;
@@ -3422,6 +3428,21 @@ nav li {
   
   .feature-icon i {
     font-size: 20px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .contact-hero {
+    margin-bottom: 0; /* Remove bottom margin on mobile */
+  }
+  
+  .contact-info {
+    display: none;
+  }
+
+  .map-section {
+    margin-top: 0; /* Ensure no top margin on map */
   }
 }
 
