@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Explore United Cocoa Limited's gallery showcasing our state-of-the-art cocoa processing facilities, warehouse operations, and production processes in Ghana." />
+  <meta name="keywords"
+    content="United Cocoa Gallery, Cocoa Processing Facility, Ghana Cocoa Factory, Cocoa Warehouse, Cocoa Production, United Cocoa Facilities" />
+  <meta name="author" content="United Cocoa Limited" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Gallery | United Cocoa Limited" />
+  <meta property="og:description"
+    content="Take a visual tour of United Cocoa Limited's cocoa processing facilities and operations in Ghana." />
+  <meta property="og:image" content="./assets/logo.jpeg" />
+  <meta property="og:url" content="https://unitedcocoa.com/gallery" />
+  <meta property="og:type" content="website" />
+  <title>Gallery | United Cocoa Limited</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="./assets/logo.jpeg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/logo.jpeg" alt="United Cocoa Logo" class="mainlogo" />
+        <span class="brand-text">United Cocoa</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutUs.html">
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">
+              <span>Products</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./gallery.html">
+              <span>Gallery</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-spacer"></div>
+
+  <!-- Hero Section -->
+  <div class="gallery-hero">
+    <div class="container">
+      <div class="gallery-hero-content">
+        <span class="gallery-badge">Our Facilities</span>
+        <h1>Gallery</h1>
+        <p>Take a visual tour of our state-of-the-art cocoa processing facilities and operations</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <img src="./assets/gallery/1.jpeg" alt="United Cocoa Facility" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <img src="./assets/gallery/2.jpeg" alt="Cocoa Processing" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <img src="./assets/gallery/3.jpeg" alt="Warehouse Operations" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <img src="./assets/gallery/4.jpeg" alt="Production Line" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <img src="./assets/gallery/5.jpeg" alt="Storage Facility" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(6)">
+          <img src="./assets/gallery/6.jpeg" alt="Processing Equipment" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(7)">
+          <img src="./assets/gallery/7.jpeg" alt="Quality Control" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(8)">
+          <img src="./assets/gallery/8.jpeg" alt="Packaging Area" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(9)">
+          <img src="./assets/gallery/9.jpeg" alt="Loading Bay" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <span class="lightbox-prev" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</span>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Gallery Image" />
+    <span class="lightbox-next" onclick="event.stopPropagation(); changeImage(1)">&#10095;</span>
+    <div id="lightbox-counter" class="lightbox-counter"></div>
+  </div>
+
+  <!-- Product Ticker -->
+  <section class="product-ticker-section">
+    <div class="product-ticker">
+      <div class="ticker-item">Natural Cocoa Butter</div>
+      <div class="ticker-item">Deodorised Cocoa Butter</div>
+      <div class="ticker-item">Natural Cocoa Powder</div>
+      <div class="ticker-item">Alkalised Cocoa Powder</div>
+      <div class="ticker-item">Cocoa Mass</div>
+      <div class="ticker-item">Cocoa Liquor</div>
+      <div class="ticker-item">Cocoa Cake</div>
+      <div class="ticker-item">Natural Cocoa Butter</div>
+      <div class="ticker-item">Deodorised Cocoa Butter</div>
+      <div class="ticker-item">Natural Cocoa Powder</div>
+      <div class="ticker-item">Alkalised Cocoa Powder</div>
+      <div class="ticker-item">Cocoa Mass</div>
+      <div class="ticker-item">Cocoa Liquor</div>
+      <div class="ticker-item">Cocoa Cake</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="footertitle">
+            <h1>Our Products</h1>
+            <ul class="footerlinks">
+              <li class="footerlink">Cocoa Mass</li>
+              <li class="footerlink">Cocoa Liquor</li>
+              <li class="footerlink">Cocoa Butter</li>
+              <li class="footerlink">Brownco</li>
+              <li class="footerlink">Strong Choco</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="footertitle">
+            <h1>Links</h1>
+            <ul class="footerlinks">
+              <li class="footerlink"><a href="index.html">Home</a></li>
+              <li class="footerlink"><a href="./aboutUs.html">About Us</a></li>
+              <li class="footerlink"><a href="./products.html">Our Products</a></li>
+              <li class="footerlink"><a href="./gallery.html">Gallery</a></li>
+              <li class="footerlink"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="footertitle">
+            <h1>Contact Us</h1>
+            <ul class="footerlinks">
+              <li class="footerlink">
+                <i class="fas fa-map-marker-alt me-2"></i> Headquarters 7 Trakor Street Accra, Ghana
+              </li>
+              <li class="footerlink">
+                <i class="far fa-clock me-2"></i> Monday - Friday 08:00 am - 6:30pm
+              </li>
+              <li class="footerlink">
+                <i class="fas fa-phone me-2"></i> 0302 261 080
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerbottom d-flex flex-column justify-content-center align-items-center">
+        <div class="socialiconcontainer d-flex flex-wrap justify-content-center align-items-center gap-3">
+          <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="copyrightcontainer">
+          <p class="copyright">
+            Copyright &copy; <span class="showCurrentYear"></span> United Cocoa
+            Limited. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  <script>
+    // Lightbox functionality
+    let currentImage = 1;
+    const totalImages = 9;
+
+    function openLightbox(imageNum) {
+      currentImage = imageNum;
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const counter = document.getElementById('lightbox-counter');
+      
+      img.src = `./assets/gallery/${imageNum}.jpeg`;
+      counter.textContent = `${imageNum} / ${totalImages}`;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function changeImage(direction) {
+      currentImage += direction;
+      if (currentImage > totalImages) currentImage = 1;
+      if (currentImage < 1) currentImage = totalImages;
+      
+      const img = document.getElementById('lightbox-img');
+      const counter = document.getElementById('lightbox-counter');
+      
+      img.src = `./assets/gallery/${currentImage}.jpeg`;
+      counter.textContent = `${currentImage} / ${totalImages}`;
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') changeImage(-1);
+        if (e.key === 'ArrowRight') changeImage(1);
+      }
+    });
+  </script>
+</body>
+
+</html>
