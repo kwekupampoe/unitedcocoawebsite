@@ -441,7 +441,7 @@
           },
           body: JSON.stringify({
             template: 'contact-form',
-            to: 'mensah@davidemsecommerce.org',
+            to: 'davidmensahedem@gmail.com',
             from: {
               email: 'onboarding@resend.dev',
               name: 'United Cocoa Website'
