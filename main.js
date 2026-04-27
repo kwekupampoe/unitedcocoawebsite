@@ -396,6 +396,112 @@
     }
   }
 
+  // ── Contact Form Handler ──
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+
+    var submitBtn = document.getElementById('submitBtn');
+    var btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+    var btnLoader = submitBtn ? submitBtn.querySelector('.btn-loader') : null;
+    var messageTextarea = document.getElementById('message');
+    var charCount = document.getElementById('charCount');
+
+    // Character counter for message
+    if (messageTextarea && charCount) {
+      messageTextarea.addEventListener('input', function () {
+        charCount.textContent = this.value.length;
+      });
+    }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // Show loading state
+      if (submitBtn) submitBtn.disabled = true;
+      if (btnText) btnText.textContent = 'Sending...';
+      if (btnLoader) btnLoader.style.display = 'inline-block';
+
+      // Collect form data
+      var firstName = document.getElementById('firstname').value.trim();
+      var lastName = document.getElementById('lastname').value.trim();
+      var name = lastName ? firstName + ' ' + lastName : firstName;
+      var email = document.getElementById('email').value.trim();
+      var phone = document.getElementById('phonenumber').value.trim();
+      var company = document.getElementById('company').value.trim();
+      var subject = document.getElementById('subject').value || 'Website Contact Form';
+      var message = document.getElementById('message').value.trim();
+
+      try {
+        var response = await fetch('https://emailservice-api.onrender.com/api/email/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-API-Key': '79e18cce96eec04ad3da9557f740eccd7b4607ccb14c091b'
+          },
+          body: JSON.stringify({
+            template: 'contact-form',
+            to: 'info@unitedcocoaltd.com',
+            from: {
+              email: 'noreply@unitedcocoaltd.com',
+              name: 'United Cocoa Website'
+            },
+            subject: 'New Contact: ' + subject,
+            templateData: {
+              name: name,
+              email: email,
+              phone: phone,
+              message: message,
+              company: company || undefined
+            }
+          })
+        });
+
+        var result = await response.json();
+
+        if (result.success) {
+          showFormMessage('success', 'Thank you! Your message has been sent successfully. We will get back to you soon.');
+          form.reset();
+          if (charCount) charCount.textContent = '0';
+        } else {
+          showFormMessage('error', 'Sorry, there was a problem sending your message. Please try again or contact us directly.');
+        }
+      } catch (error) {
+        console.error('Contact form error:', error);
+        showFormMessage('error', 'Sorry, there was a problem sending your message. Please try again or contact us directly.');
+      } finally {
+        // Reset button state
+        if (submitBtn) submitBtn.disabled = false;
+        if (btnText) btnText.textContent = 'Send Message';
+        if (btnLoader) btnLoader.style.display = 'none';
+      }
+    });
+
+    function showFormMessage(type, text) {
+      // Remove existing message
+      var existing = document.querySelector('.form-status-message');
+      if (existing) existing.remove();
+
+      var msgDiv = document.createElement('div');
+      msgDiv.className = 'form-status-message ' + type;
+      msgDiv.innerHTML = '<i class="fas fa-' + (type === 'success' ? 'check-circle' : 'exclamation-circle') + '"></i> ' + text;
+
+      var formPanel = document.querySelector('.contact-form-panel');
+      if (formPanel) {
+        formPanel.insertBefore(msgDiv, form);
+      }
+
+      // Scroll to message
+      msgDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Auto-remove after 10 seconds
+      setTimeout(function () {
+        msgDiv.classList.add('fade-out');
+        setTimeout(function () { msgDiv.remove(); }, 500);
+      }, 10000);
+    }
+  }
+
   // ── Initialize Everything ──
   document.addEventListener('DOMContentLoaded', function () {
     handleNavbarScroll();
@@ -410,6 +516,7 @@
     initMobileNavClose();
     initMagneticButtons();
     initTickerHover();
+    initContactForm();
   });
 
 })();

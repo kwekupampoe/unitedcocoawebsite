@@ -2353,6 +2353,59 @@ p {
   font-size: 1.2rem;
 }
 
+/* Form Status Message (inline) */
+.form-status-message {
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideDown 0.4s ease-out;
+}
+
+.form-status-message.success {
+  background: linear-gradient(135deg, rgba(46,125,50,0.1), rgba(56,142,60,0.1));
+  color: #2e7d32;
+  border: 1px solid rgba(46,125,50,0.3);
+}
+
+.form-status-message.error {
+  background: linear-gradient(135deg, rgba(198,40,40,0.1), rgba(211,47,47,0.1));
+  color: #c62828;
+  border: 1px solid rgba(198,40,40,0.3);
+}
+
+.form-status-message i {
+  font-size: 1.2rem;
+}
+
+.form-status-message.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /* ── Scroll Reveal Animations ── */
 .reveal {
   opacity: 0;
